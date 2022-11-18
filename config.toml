@@ -30,10 +30,10 @@ theme = 'shell'
   # ./[folderName]/
   # ...
   # Note: result of the tree command
-  userName = "schematicwizard"
+  userName = "sw"
   pcName = "void"
   workDir = "billofmaterials"
-  profile = "profile.txt"
+  profile = "about.txt"
 
   # Note: speed at which text is displayed on the terminal
   # Note: if set to 0, typing animation will be disabled
@@ -41,7 +41,7 @@ theme = 'shell'
   # Note: if you want to enable Mathjax, you need to set it to 0
   # Note: and set "math: true" at front matter in your Markdown file
   ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
-  stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
+  stdoutDelay = 20 # stdout speed : [description] , files in Params.Tree
   commandDelay = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
 
   # terminalDelay = 20 : deprecated
@@ -57,16 +57,25 @@ theme = 'shell'
   # activityDelay = 5 : deprecated
 
   description = """
-  Bill of Materials is an artistic long time research project, built around
-  complex technologies, computers, algorithms, subconscious and dreams.
 
-  The deep nature and meaning of the conducted experiments has not been
-  communicated to the public, but one can grasp some pieces of intelligence
-  about deeper layers of the project by studying its details.
+  ╔╗ ╔═╗╔╦╗
+  ╠╩╗║ ║║║║
+  ╚═╝╚═╝╩ ╩══════════
+  Bill of Materials is an artistic lifelong
+  research project, built around computers,
+  complex and obsolete technologies, dreams,
+  algorithms, electronics and subconscious.
 
+  The deep nature and meaning of the conducted
+  experiments has not been communicated to the
+  public, but one can grasp some pieces of
+  intelligence about deeper layers of the
+  project by studying its details.
 
-  For more information about the materials and entities, please refer to the
-  wiki.
+  For more information about the materials and
+  entities, please refer to the wiki.
+
+  Schematic Wizard
 
   """
 
