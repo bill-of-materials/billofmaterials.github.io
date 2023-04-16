@@ -73,7 +73,7 @@ theme = 'shell'
   project by studying its details.
 
   For more information about the materials and
-  entities, please refer to the wiki.
+  entities, please refer to RFC-0041.
 
   sw
 
@@ -86,8 +86,10 @@ theme = 'shell'
   [Params.Tree]
   use = true
   folderName = "data"
-  # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [
     ["artifacts", "https://github.com/bill-of-materials/data/tree/main/ARTIFACTS"],
-    ["wiki", "https://github.com/bill-of-materials/data/wiki/glossary"],
+    ["elements", "https://github.com/bill-of-materials/data/tree/main/ELEMENTS"],
+    ["sandboxes", "https://github.com/bill-of-materials/data/tree/main/SANDBOXES"],
+    ["rfc", "https://github.com/bill-of-materials/data/tree/main/RFC"],
+    ["rfc-0041", "https://github.com/bill-of-materials/data/blob/main/RFC/RFC-0041.entities/RFC-0041.md"],
   ]
