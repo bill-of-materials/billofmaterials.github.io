@@ -7,56 +7,56 @@ theme = 'shell'
 [Params]
 
 # Additions start here
-  [Params.Navbar]
-  use = false
+[Params.Navbar]
+use = false
 
-  [Params.Extensions]
-  use = true
-  ext = ".txt" # extension to add after single page
+[Params.Extensions]
+use = true
+ext = ".txt" # extension to add after single page
 
-  description = "Bill of Materials"
+description = "Bill of Materials"
 
-  [Params.Terminal]
-  scheme = "Material"
+[Params.Terminal]
+scheme = "Material"
 
-  # Note: in terminal
-  # [userName]@[pcName]:~/$ cd [workDir]
-  # [userName]@[pcName]:~/[workDir]$ cat [profile]
-  #
-  # [description]
-  #
-  # Note: if you set Params.Tree > use = true
-  # [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
-  # ./[folderName]/
-  # ...
-  # Note: result of the tree command
-  userName = "sw"
-  pcName = "void"
-  workDir = "billofmaterials"
-  profile = "about.txt"
+# Note: in terminal
+# [userName]@[pcName]:~/$ cd [workDir]
+# [userName]@[pcName]:~/[workDir]$ cat [profile]
+#
+# [description]
+#
+# Note: if you set Params.Tree > use = true
+# [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
+# ./[folderName]/
+# ...
+# Note: result of the tree command
+userName = "sw"
+pcName = "void"
+workDir = "billofmaterials"
+profile = "about.txt"
 
-  # Note: speed at which text is displayed on the terminal
-  # Note: if set to 0, typing animation will be disabled
-  # Note:
-  # Note: if you want to enable Mathjax, you need to set it to 0
-  # Note: and set "math: true" at front matter in your Markdown file
-  ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
-  stdoutDelay = 20 # stdout speed : [description] , files in Params.Tree
-  commandDelay = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+# Note: speed at which text is displayed on the terminal
+# Note: if set to 0, typing animation will be disabled
+# Note:
+# Note: if you want to enable Mathjax, you need to set it to 0
+# Note: and set "math: true" at front matter in your Markdown file
+ps1Delay = 0      # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
+stdoutDelay = 20  # stdout speed : [description] , files in Params.Tree
+commandDelay = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
 
-  # terminalDelay = 20 : deprecated
+# terminalDelay = 20 : deprecated
 
-  # Note: speed at which text is displayed on the activity pages
-  # Note: if set to 0, typing animation will be disabled
-  # Note:
-  # Note: if you want to enable Mathjax, you need to set it to 0
-  # Note: and set "math: true" at front matter in your Markdown file
-  titleDelay = 0 # title speed : "title" in front matter
-  contentDelay = 0 # content speed : content in .md file
+# Note: speed at which text is displayed on the activity pages
+# Note: if set to 0, typing animation will be disabled
+# Note:
+# Note: if you want to enable Mathjax, you need to set it to 0
+# Note: and set "math: true" at front matter in your Markdown file
+titleDelay = 0   # title speed : "title" in front matter
+contentDelay = 0 # content speed : content in .md file
 
-  # activityDelay = 5 : deprecated
+# activityDelay = 5 : deprecated
 
-  description = """
+description = """
 
   ╔╗ ╔═╗╔╦╗
   ╠╩╗║ ║║║║
@@ -79,17 +79,32 @@ theme = 'shell'
 
   """
 
-  # Note: If you want to use a Markdown file, you can use the following
-  # description = "/description.md"
-  # Note: and put the description.md in /content/description.md
+# Note: If you want to use a Markdown file, you can use the following
+# description = "/description.md"
+# Note: and put the description.md in /content/description.md
 
-  [Params.Tree]
-  use = true
-  folderName = "data"
-  files = [
-    ["artifacts", "https://github.com/bill-of-materials/data/tree/main/ARTIFACTS"],
-    ["elements", "https://github.com/bill-of-materials/data/tree/main/ELEMENTS"],
-    ["sandboxes", "https://github.com/bill-of-materials/data/tree/main/SANDBOXES"],
-    ["rfc", "https://github.com/bill-of-materials/data/tree/main/RFC"],
-    ["rfc-0041", "https://github.com/bill-of-materials/data/blob/main/RFC/RFC-0041.entities/RFC-0041.md"],
-  ]
+[Params.Tree]
+use = true
+folderName = "data"
+files = [
+  [
+    "artifacts",
+    "https://github.com/bill-of-materials/data/tree/main/ARTIFACTS",
+  ],
+  [
+    "elements",
+    "https://github.com/bill-of-materials/data/tree/main/ELEMENTS",
+  ],
+  [
+    "sandboxes",
+    "https://github.com/bill-of-materials/data/tree/main/SANDBOXES",
+  ],
+  [
+    "rfc",
+    "https://github.com/bill-of-materials/data/tree/main/RFC",
+  ],
+  [
+    "rfc-0041",
+    "https://github.com/bill-of-materials/data/tree/main/RFC/RFC-0041",
+  ],
+]
